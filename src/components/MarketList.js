@@ -62,8 +62,6 @@ const marketSchedule = [
 }
 
 
-
-
 MarketList.propTypes = {
   weekday: PropTypes.string
 }
