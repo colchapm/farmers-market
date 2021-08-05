@@ -1,13 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Market(props){
+function Market(props) {
   return (
     <React.Fragment>
-      <h3>{props.day} ---- {props.location}</h3>
-      <p><em>{props.hours}</em></p>
-      <p><em>{props.booth}</em></p>
-      <hr/>
+      <p>
+        <strong>When: </strong> {props.day}
+      </p>
+      <p>
+        <strong>Where: </strong> {props.location}
+      </p>
+      <p>
+        <strong>Hours: </strong> {props.hours}
+      </p>
+      <p>
+        <strong>Booth: </strong> {props.booth}
+      </p>
+      <hr />
     </React.Fragment>
   );
 }
@@ -17,7 +26,7 @@ Market.propTypes = {
   day: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   hours: PropTypes.string,
-  booth: PropTypes.string
+  booth: PropTypes.string,
 };
 
 export default Market;
